@@ -38,6 +38,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -73,10 +74,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ContactsManager:build:production"
+              "buildTarget": "ContactsManager:build:production"
             },
             "development": {
-              "browserTarget": "ContactsManager:build:development"
+              "buildTarget": "ContactsManager:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +85,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ContactsManager:build"
+            "buildTarget": "ContactsManager:build"
           }
         },
         "test": {
@@ -101,6 +102,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.scss"
             ],
             "scripts": []
